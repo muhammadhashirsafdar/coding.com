@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask Question</title>
+    <script src="https://kit.fontawesome.com/6aac3a3a02.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css" /> 
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Coding.com</div>
+        <i class="fa-solid fa-bars fa-2xl" style="color: #63e6be" id="icon"></i>
+    </div>
+
+
+    <div class="main">
+        <div class="sidebarmenu" id="sidemenu">
+            <ul class="menu">
+                <li><a id="homepage" href="#">Home</a></li>
+                <li><a id="aboutusbtn" href="#">About us</a></li>
+                <li id="logout-btn"><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="reactjs" id="content">
+        <div class="frontlayout">
+            <h1 class="underline">Title / Heading</h1>
+            <br />
+            <input type="text" class="title-input" id="heading-input" placeholder="Title or Heading" />
+            <br />
+            <br />
+            <h2 class="underline" >Description / Question</h2>
+            <br />
+            <textarea class="text" id="text-area" placeholder="Ask or Describe your Problem here" cols="195" rows="5"></textarea>
+            <div class="answer-btn">
+                <button id="question-save">Save</button>
+                <button id="question-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>

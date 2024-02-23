@@ -1,0 +1,420 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:aliceblue;
+}
+
+/* navbar */
+
+.navbar {
+    background-color: black;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar .logo {
+    float: left;
+    font-size: 18px;
+    padding: 15px 15px;
+    color: #ddd;
+}
+
+
+
+
+/* divs */
+
+.main{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: left;
+}
+
+#icon{
+    position: absolute;
+    top: 23px;
+    left: 98rem;
+    color: aqua;
+    cursor: pointer;
+
+}
+
+/* sidebar menu */
+.sidebarmenu{
+    background-color: aqua;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    display: none;
+    transition: 0.6s ease;
+
+} 
+
+
+.menu li {
+    list-style: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+}
+.menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 22px;
+
+}
+.menu li a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* mini navbar */
+.mininavbar {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    
+}
+
+.mininavbar a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    align-items: center;
+    margin-left: 48.5rem;
+}
+
+.mininavbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#question-btn{
+    background-color:#4dab99 ;
+}
+
+
+/* signup page */
+
+ .container{
+    width: 100%;
+    height: 100%; 
+    
+
+} 
+
+.form-box{
+    text-align: center;
+    background-color:aliceblue;
+    max-width: 450px;
+    margin-top:230px;
+    padding: 50px 60px 70px;
+    margin-left: 620px;
+}
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #3c00a0;
+    
+}
+
+
+
+.btn-feild{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-feild button{
+   
+    height: 40px;
+    margin-top: 8rem;
+    padding: 5px 15px;
+    background-color: #3c00a0;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    border-radius: 20px;
+
+}
+/* Ask page css */
+
+
+
+/* input css */
+
+
+.underline{
+    margin-left:36rem ;
+}
+
+.answerunderline{
+    margin-left:40rem ;
+}
+.title-input{
+    padding: 8px 15px;
+    outline: 0;
+    font-size: 18px;
+    width: 55%;
+    margin-left: 19rem;
+}
+
+#object-list li h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+#object-list li p {
+    font-size: 22.5px;
+    line-height: 1.5;
+}
+
+
+/* questions css */
+
+.reactjs{
+    margin-top: 6.5rem;
+    border: 2px solid gainsboro;
+    margin-left: 6rem;
+    margin-right: 10rem;
+    padding-left: 15px;
+    padding-bottom: 9px;
+    padding-top: 1rem;
+
+}
+
+
+
+.date{
+   
+    margin-left: 65rem;
+
+}
+
+.readmore-btn{
+    color: rgb(236, 81, 81)
+}
+
+:hover.readmore-btn{
+    cursor: pointer;
+    color:rgb(231, 32, 32) ;
+}
+
+.name{
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+
+/* Answer css */
+
+.answer-input{
+    
+    padding-bottom: 8rem;
+    outline: 0;
+    font-size: 24px;
+    width: 97%;
+    height: 15rem;
+}
+
+
+
+textarea::placeholder {
+    text-align: center;
+    line-height: 5em;
+    font-size: 18px;
+  }
+
+  .answer-btn{
+    margin-left: 37rem;
+  }
+
+.answer-btn button {
+    margin-top: 2rem;
+    width: 100px; 
+    height: 40px; 
+    margin-right: 10px; 
+    border: none;
+    cursor: pointer;
+    background-color: #63E6BE;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.answer-btn button:hover {
+    background-color: #4dab99; 
+}
+
+.aboutus{
+    font-size: 5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Responsive CSS for navbar */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar a {
+        float: none;
+        display: inline-block;
+        padding: 10px ;
+
+    }
+
+    .navbar .logo {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        padding: 10px; 
+        font-size: 16px;
+    }
+}
+
+/* Responsive CSS for sidebar menu */
+@media only screen and (max-width: 768px) {
+    .sidebarmenu {
+        width: 250px;
+        height: 100%;
+        position: fixed;
+        display: none;
+        transition: 0.6s ease;
+        right: 0; 
+        top: 20;
+    }
+
+    .menu li a {
+        padding: 14px;
+    }
+}
+
+/* Responsive CSS for mini navbar */
+@media only screen and (max-width: 768px) {
+    .mininavbar {
+        text-align: center;
+    }
+
+    .mininavbar a {
+        float: none;
+        display: inline-block;
+        padding: 10px 12px;
+    }
+}
+
+/* Responsive CSS for form box */
+@media only screen and (max-width: 768px) {
+    .form-box {
+        max-width: 90%;
+        margin: 10% auto;
+        padding: 30px;
+    }
+
+    .form-box h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Responsive CSS for input fields */
+@media only screen and (max-width: 768px) {
+    .title-input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .underline, .answerunderline {
+        margin-left: 0;
+    }
+}
+
+/* Responsive CSS for questions */
+@media only screen and (max-width: 768px) {
+    .reactjs {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .date {
+        margin: 20px auto;
+    }
+}
+
+/* Responsive CSS for answer input */
+@media only screen and (max-width: 768px) {
+    .answer-input {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .answer-btn {
+        margin: 20px auto;
+    }
+}
+
+/* Responsive CSS for about us */
+@media only screen and (max-width: 768px) {
+    .aboutus {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    textarea {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        resize: vertical; 
+    }
+}
+
+/* Responsive CSS for Ask Question Button */
+@media only screen and (max-width: 768px) {
+    #question-btn {
+        margin-left: 0; /* Adjust margin to prevent overlap */
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #icon {
+        position: absolute;
+        left: 83%; 
+        transform: translateY(-50%);
+        right: 16px; 
+    }
+}
+
+
+
+
